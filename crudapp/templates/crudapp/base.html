@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUd App</title>
+    <link rel="stylesheet" href="{% static 'crudapp/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">
+            Crud Project
+        </h2>
+        {% block content %} {% endblock content %}
+    </div>
+    
+    <script src="{% static 'crudapp/js/bootsrap.bundle.min.js' %}"></script>
+    <script src="{% static 'crudapp/js/jquery.js' %}"></script>
+    <script src="{% static 'crudapp/js/bpopper.js' %}"></script>    
+</body>
+</html>
